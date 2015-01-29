@@ -1,5 +1,5 @@
 ActiveAdmin.register UploadedFile do
-  menu parent: I18n.t('active_admin.menu.resources', default: 'resources')
+  menu parent: I18n.t('active_admin.menu.resources')
 
   config.per_page = 10
 
@@ -8,7 +8,7 @@ ActiveAdmin.register UploadedFile do
   index do
     selectable_column
     column(:file){|file| link_to(file[:file], admin_uploaded_file_path(file))}
-    column t('activerecord.attributes.uploaded_file.url', default: 'url') do |file|
+    column t('activerecord.attributes.uploaded_file.url') do |file|
       link_to truncate(file.file.url, length: 50), file.file.url, target: '_blank'
     end
     column :created_at
@@ -18,7 +18,7 @@ ActiveAdmin.register UploadedFile do
   show(title: proc {|f| f[:file]}) do |file|
     attributes_table do
       row(:file) { file[:file] }
-      row(t('activerecord.attributes.uploaded_file.url', default: 'url')) do
+      row(t('activerecord.attributes.uploaded_file.url')) do
         link_to file.file.url, file.file.url, target: '_blank'
       end
       row :created_at
