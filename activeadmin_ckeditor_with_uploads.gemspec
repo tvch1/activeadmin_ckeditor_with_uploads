@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'ckeditor_rails', '~> 4.4.3'
   s.add_dependency 'activeadmin', '~> 1.0.0.pre'
   s.add_dependency 'haml-rails', '~> 0.5.3'
+  s.add_dependency 'carrierwave', '~> 0.10.0'
 
   s.add_development_dependency "sqlite3"
 end
