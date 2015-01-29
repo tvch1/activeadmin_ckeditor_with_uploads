@@ -18,6 +18,10 @@ module ActiveadminCkeditorWithUploads
         template "admin/uploaded_image.rb", 'app/admin/uploaded_image.rb'
       end
 
+      def copy_locales
+        template 'config/locales/uploads.ru.yml'
+      end
+
       def create_migration
         template 'migrations/create_uploads.rb', "db/migrate/#{migration_date}_create_uploads.rb"
       end

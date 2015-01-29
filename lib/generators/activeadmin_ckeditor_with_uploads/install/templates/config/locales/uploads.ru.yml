@@ -1,0 +1,25 @@
+ru:
+  activerecord:
+    models:
+      uploaded_image:
+        zero: "Изображений"
+        one: "Изображение"
+        few: "Изображения"
+        many: "Изображений"
+        other: "Изображения"
+      uploaded_file:
+        zero: "Файлов"
+        one: "Файл"
+        few: "Файла"
+        many: "Файлов"
+        other: "Файлы"
+    attributes:
+      uploaded_image:
+        file: "Изображение"
+        url: "Адрес"
+      uploaded_file:
+        file: "Файл"
+        url: "Адрес"
+  active_admin:
+    menu:
+      resources: 'Ресурсы'
