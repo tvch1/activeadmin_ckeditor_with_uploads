@@ -12,7 +12,7 @@ ActiveAdmin.register UploadedFile do
       link_to truncate(file.file.url, length: 50), file.file.url, target: '_blank'
     end
     column :created_at
-    column(""){ |file| action_links(file) }
+    actions
   end
 
   show(title: proc {|f| f[:file]}) do |file|

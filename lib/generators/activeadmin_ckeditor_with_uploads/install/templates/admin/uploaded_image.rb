@@ -14,7 +14,7 @@ ActiveAdmin.register UploadedImage do
       link_to truncate(image.file.url, length: 30), image.file.url, target: "_blanc"
     end
     column :created_at
-    column(""){ |image| action_links(image) }
+    actions
   end
 
   show(title: proc {|f| f[:file]}) do |image|
