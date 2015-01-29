@@ -1,4 +1,5 @@
 require "activeadmin"
+require 'carrierwave'
 
 require "formtastic/inputs/ckeditor_input"
 
