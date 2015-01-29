@@ -19,7 +19,6 @@ ActiveAdmin.register Upload do
 
   collection_action :select_resource, method: :get do
     @files = UploadedFile.all
-    @pages = Page.published.order(:position)
     @CKEditorFuncNum = params[:CKEditorFuncNum]
     render layout: false
   end

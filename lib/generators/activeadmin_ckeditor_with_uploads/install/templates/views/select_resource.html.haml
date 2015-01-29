@@ -5,16 +5,6 @@
     = stylesheet_link_tag 'admin/active_admin'
 
   %body
-    - if @pages.present?
-    %div.table-container
-      %table.index_table
-        %thead
-          %tr
-            %th.col Страницы
-        %tbody
-          - @pages.each_with_index do |page, i|
-            %tr{'data-url'=>page_path(page), class:(i.even? ? 'odd' : 'even')}
-              %td=page.title
     %div.table-container
       %table.index_table
         %thead
@@ -35,7 +25,7 @@
       }();
     :css
       div.table-container{
-        width: 48%;
+        width: 98%;
         float: left;
         margin-left: 1%;
         margin-top: 1%;
