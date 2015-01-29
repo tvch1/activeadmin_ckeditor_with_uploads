@@ -16,6 +16,7 @@ ru:
     attributes:
       uploaded_image:
         file: "Изображение"
+        thumb: 'Превью'
         url: "Адрес"
       uploaded_file:
         file: "Файл"

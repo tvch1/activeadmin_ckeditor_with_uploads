@@ -1,0 +1,14 @@
+en:
+  activerecord:
+    models:
+    attributes:
+      uploaded_image:
+        file: "Image"
+        thumb: 'Preview'
+        url: "Url"
+      uploaded_file:
+        file: "File"
+        url: "Url"
+  active_admin:
+    menu:
+      resources: 'Resources'

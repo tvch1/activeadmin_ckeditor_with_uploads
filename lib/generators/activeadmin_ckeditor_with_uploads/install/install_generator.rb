@@ -20,6 +20,7 @@ module ActiveadminCkeditorWithUploads
 
       def copy_locales
         template 'config/locales/uploads.ru.yml'
+        template 'config/locales/uploads.en.yml'
       end
 
       def create_migration

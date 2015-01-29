@@ -10,7 +10,7 @@ ActiveAdmin.register UploadedImage do
     column :image do |image|
       link_to(image_tag(image.file.thumb), [:admin, image])
     end
-    column t('attributes.url') do |image|
+    column t('activerecord.attributes.uploaded_file.url') do |image|
       link_to truncate(image.file.url, length: 30), image.file.url, target: "_blanc"
     end
     column :created_at
@@ -20,8 +20,8 @@ ActiveAdmin.register UploadedImage do
   show(title: proc {|f| f[:file]}) do |image|
     attributes_table do
       row(:file) { image[:file] }
-      row(t('attributes.thumb')){ image_tag(image.file.thumb) }
-      row t('attributes.url') do
+      row(t('activerecord.attributes.uploaded_file.thumb')){ image_tag(image.file.thumb) }
+      row t('activerecord.attributes.uploaded_file.url') do
         link_to image.file.url, image.file.url, target: "_blanc"
       end
       row :created_at
