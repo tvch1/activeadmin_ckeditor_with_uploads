@@ -1,0 +1,4 @@
+require 'activeadmin_ckeditor_with_uploads/engine'
+
+module ActiveadminCkeditorWithUploads
+end
