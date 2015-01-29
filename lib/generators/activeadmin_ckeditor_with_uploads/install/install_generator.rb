@@ -25,10 +25,7 @@ module ActiveadminCkeditorWithUploads
       private
 
       def migration_date
-        now = DateTime.now
-        [:year, :month, :day, :hour, :minute, :second].map do |method|
-          now.send(method).to_s
-        end.join('')
+        DateTime.now.strftime('%Y%m%d%H%M%S')
       end
     end
   end
