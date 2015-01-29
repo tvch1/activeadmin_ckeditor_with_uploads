@@ -18,8 +18,17 @@ module ActiveadminCkeditorWithUploads
         template "admin/uploaded_image.rb", 'app/admin/uploaded_image.rb'
       end
 
-      def create_migrations
-        migration_template 'migrations/create_uploads.rb', 'db/migrate/create_uploads.rb'
+      def create_migration
+        template 'migrations/create_uploads.rb', "db/migrate/#{migration_date}_create_uploads.rb"
+      end
+
+      private
+
+      def migration_date
+        now = DateTime.now
+        [:year, :month, :day, :hour, :minute, :second].map do |method|
+          now.send(method).to_s
+        end.join('')
       end
     end
   end
