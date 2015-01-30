@@ -7,11 +7,11 @@ require "activeadmin_ckeditor_with_uploads/version"
 Gem::Specification.new do |s|
   s.name        = "activeadmin_ckeditor_with_uploads"
   s.version     = ActiveadminCkeditorWithUploads::VERSION
-  s.authors     = ["d.krasnov"]
-  s.email       = ["d.krasnov@1tvch.ru"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActiveadminCkeditorWithUploads."
-  s.description = "TODO: Description of ActiveadminCkeditorWithUploads."
+  s.authors     = ["Vizvamitra"]
+  s.email       = ["vizvamitra@gmail.com"]
+  s.homepage    = "https://github.com/tvch1/activeadmin_ckeditor_with_uploads"
+  s.summary     = "Adds ckeditor with working file and image uploads to activeadmin"
+  s.description = "Adds ckeditor with working file and image uploads to activeadmin"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
