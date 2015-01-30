@@ -14,12 +14,6 @@ module ActiveadminCkeditorWithUploads
         copy_file "../../../../app/views/select_resource.html.haml", 'app/views/admin/uploads/select_resource.html.haml'
       end
 
-      def copy_resources
-        copy_file "../../../activeadmin_ckeditor_with_uploads/admin/upload.rb", 'app/admin/upload.rb'
-        copy_file "../../../activeadmin_ckeditor_with_uploads/admin/uploaded_file.rb", 'app/admin/uploaded_file.rb'
-        copy_file "../../../activeadmin_ckeditor_with_uploads/admin/uploaded_image.rb", 'app/admin/uploaded_image.rb'
-      end
-
     end
   end
 end

@@ -11,6 +11,12 @@ module ActiveadminCkeditorWithUploads
         template 'migrations/create_uploads.rb', "db/migrate/#{migration_date}_create_uploads.rb"
       end
 
+      def copy_resources
+        template "admin/upload.rb", 'app/admin/upload.rb'
+        template "admin/uploaded_file.rb", 'app/admin/uploaded_file.rb'
+        template "admin/uploaded_image.rb", 'app/admin/uploaded_image.rb'
+      end
+
       private
 
       def migration_date
