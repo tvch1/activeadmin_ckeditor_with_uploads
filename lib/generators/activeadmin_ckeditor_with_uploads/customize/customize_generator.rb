@@ -5,13 +5,15 @@ module ActiveadminCkeditorWithUploads
     class CustomizeGenerator < Rails::Generators::Base
       desc 'Copy ckeditor.js.coffee file to your application'
 
+      source_root File.expand_path("../../../../../", __FILE__)
+
       def copy_ckeditor_config
-        copy_file "../../../../../app/assets/javascripts/admin/ckeditor.js.coffee", 'app/assets/javascripts/admin/ckeditor.js.coffee'
+        copy_file "app/assets/javascripts/admin/ckeditor.js.coffee", 'app/assets/javascripts/admin/ckeditor.js.coffee'
       end
 
       def copy_view
         empty_directory "app/views/admin/uploads"
-        copy_file "../../../../app/views/select_resource.html.haml", 'app/views/admin/uploads/select_resource.html.haml'
+        copy_file "app/views/admin/uploads/select_resource.html.haml", 'app/views/admin/uploads/select_resource.html.haml'
       end
 
     end
