@@ -15,9 +15,9 @@ module ActiveadminCkeditorWithUploads
       end
 
       def copy_resources
-        copy_file "../../../../app/admin/upload.rb", 'app/admin/upload.rb'
-        copy_file "../../../../app/admin/uploaded_file.rb", 'app/admin/uploaded_file.rb'
-        copy_file "../../../../app/admin/uploaded_image.rb", 'app/admin/uploaded_image.rb'
+        copy_file "../../../activeadmin_ckeditor_with_uploads/admin/upload.rb", 'app/admin/upload.rb'
+        copy_file "../../../activeadmin_ckeditor_with_uploads/admin/uploaded_file.rb", 'app/admin/uploaded_file.rb'
+        copy_file "../../../activeadmin_ckeditor_with_uploads/admin/uploaded_image.rb", 'app/admin/uploaded_image.rb'
       end
 
     end
