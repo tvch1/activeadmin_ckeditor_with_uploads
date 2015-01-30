@@ -12,5 +12,9 @@ require 'activeadmin_ckeditor_with_uploads/uploaders/cke_uploads_image_uploader'
 require 'activeadmin_ckeditor_with_uploads/engine'
 require 'activeadmin_ckeditor_with_uploads/railtie'
 
+require 'activeadmin_ckeditor_with_uploads/admin/uploads'
+require 'activeadmin_ckeditor_with_uploads/admin/uploaded_file'
+require 'activeadmin_ckeditor_with_uploads/admin/uploaded_image'
+
 module ActiveadminCkeditorWithUploads
 end
